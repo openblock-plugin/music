@@ -1,0 +1,43 @@
+# Build ignore rules
+# Files and directories matching these patterns will NOT be copied to dist/
+
+# Build output
+dist/
+node_modules/
+
+# Build configuration
+.buildignore
+.editorconfig
+.eslintignore
+.eslintrc.json
+.husky
+
+# Lock files
+package-lock.json
+
+# Version control
+.git/
+.gitignore
+
+# IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Cache files
+.openblock/
+.translations/
+
+# Build scripts (not needed at runtime)
+scripts/
+
+# MP3 sources are already inlined into the bundled src/music.js by scripts/generate-manifest.cjs.
+# Keep them in the repo for regeneration, but skip in dist to avoid shipping them twice.
+assets/sounds/
+
+# The generated manifest is bundled into src/music.js by esbuild; lives outside src/
+# so the CLI's simple-file copier doesn't ship a 2 MB duplicate to dist.
+data/
