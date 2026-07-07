@@ -28,9 +28,7 @@
       }
     },
     "extensionId": "music",
-    "arch": [
-      "*"
-    ],
+    "arch": null,
     "iconURL": "./assets/music.png",
     "description": {
       "formatMessage": {
