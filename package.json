@@ -1,7 +1,7 @@
 {
   "name": "music",
-  "version": "1.0.0",
-  "author": "OpenBlock",
+  "version": "0.1.0",
+  "author": "Scratch",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -28,7 +28,12 @@
       }
     },
     "extensionId": "music",
-    "arch": null,
+    "arch": [
+      "*"
+    ],
+    "programMode": [
+      "realtime"
+    ],
     "iconURL": "./assets/music.png",
     "description": {
       "formatMessage": {
