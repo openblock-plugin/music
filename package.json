@@ -45,7 +45,7 @@
     "main": "./src/music.js",
     "translations": "./src/translations.js",
     "tags": [
-      "scratch"
+      "audio"
     ],
     "helpLink": "https://wiki.openblock.cc"
   },
